@@ -178,8 +178,28 @@
     "components/loader": {
         "files": [
             {
+                "name": "loader.spec.tsx.snap",
+                "relativePath": "__snapshots__/loader.spec.tsx.snap",
+                "test": false
+            },
+            {
                 "name": "index.ts",
                 "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "loader.composition.tsx",
+                "relativePath": "loader.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "loader.docs.tsx",
+                "relativePath": "loader.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "loader.spec.tsx",
+                "relativePath": "loader.spec.tsx",
                 "test": false
             },
             {

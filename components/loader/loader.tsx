@@ -1,16 +1,20 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, ActivityIndicator} from 'react-native';
 
 export const Loader = () => (
-  <View style={styles.loader}>
-    <Text>Loading...</Text>
+  <View style={[styles.container, styles.horizontal]}>
+    <ActivityIndicator size="large" />
   </View>
 );
 
 const styles = StyleSheet.create({
-  loader: {
-    backgroundColor: 'transparent',
-    height: 20,
-    textAlign: 'center',
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  horizontal: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 10,
   },
 });

@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {} from 'react-native';
 import {Input} from './input';
 
 export const SimpleInput = () => {
