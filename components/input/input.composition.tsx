@@ -11,3 +11,8 @@ export const InputWithPlaceHolder = () => {
   const [value, setValue] = useState('');
   return <Input placeHolder="Search" onChange={setValue} value={value} />;
 };
+
+export const InputWithCustomStyle = () => {
+  const [value, setValue] = useState('');
+  return <Input style={{color: 'blue'}} onChange={setValue} value={value} />;
+};

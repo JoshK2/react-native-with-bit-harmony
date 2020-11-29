@@ -39,4 +39,18 @@ Overview.examples = [
     }
     `,
   },
+  {
+    scope: {
+      Input,
+      useState,
+    },
+    title: 'Input with style',
+    description: 'Using the input component with style',
+    code: `
+    () => {
+      const [value, setValue] = useState('');
+      return <Input style={{color: 'blue'}} onChange={setValue} value={value} />;
+    }
+    `,
+  },
 ];
