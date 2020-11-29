@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider component snapshot test 1`] = `
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <div
+      className="css-text-901oao"
+      dir="auto"
+    >
+      Up
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "backgroundColor": "rgba(0,0,0,0.00)",
+        "height": "10px",
+      }
+    }
+  />
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <div
+      className="css-text-901oao"
+      dir="auto"
+    >
+      Bottom
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Divider component snapshot test with style 1`] = `
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <div
+      className="css-text-901oao"
+      dir="auto"
+    >
+      Up
+    </div>
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "backgroundColor": "rgba(0,0,0,1.00)",
+        "height": "10px",
+      }
+    }
+  />
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <div
+      className="css-text-901oao"
+      dir="auto"
+    >
+      Bottom
+    </div>
+  </div>
+</div>
+`;

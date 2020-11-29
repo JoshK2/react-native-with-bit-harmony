@@ -100,6 +100,26 @@
     "components/divider": {
         "files": [
             {
+                "name": "divider.spec.tsx.snap",
+                "relativePath": "__snapshots__/divider.spec.tsx.snap",
+                "test": false
+            },
+            {
+                "name": "divider.composition.tsx",
+                "relativePath": "divider.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "divider.docs.tsx",
+                "relativePath": "divider.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "divider.spec.tsx",
+                "relativePath": "divider.spec.tsx",
+                "test": false
+            },
+            {
                 "name": "divider.tsx",
                 "relativePath": "divider.tsx",
                 "test": false
@@ -119,8 +139,28 @@
     "components/input": {
         "files": [
             {
+                "name": "input.spec.tsx.snap",
+                "relativePath": "__snapshots__/input.spec.tsx.snap",
+                "test": false
+            },
+            {
                 "name": "index.ts",
                 "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "input.composition.tsx",
+                "relativePath": "input.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "input.docs.tsx",
+                "relativePath": "input.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "input.spec.tsx",
+                "relativePath": "input.spec.tsx",
                 "test": false
             },
             {

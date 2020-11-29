@@ -18,6 +18,8 @@ export class ReactNativeExtension {
         devDependencies: {
           '@types/react-native': '^0.63.2',
           '@types/jest': '~26.0.9',
+          react: '-',
+          'react-native': '-',
         },
         peerDependencies: {
           react: '^16.13.1',
