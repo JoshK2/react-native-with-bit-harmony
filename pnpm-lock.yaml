@@ -18,6 +18,7 @@ importers:
       eslint: registry.npmjs.org/eslint/6.8.0
       jest: registry.npmjs.org/jest/25.5.4
       metro-react-native-babel-preset: registry.npmjs.org/metro-react-native-babel-preset/0.59.0_@babel+core@7.12.9
+      ora: registry.npmjs.org/ora/5.1.0
       react: registry.npmjs.org/react/16.13.1
       react-native: registry.npmjs.org/react-native/0.63.3_906d884cb7b0ec6154bdf94b1ed4ca74
       react-native-gesture-handler: registry.npmjs.org/react-native-gesture-handler/1.9.0
@@ -45,6 +46,7 @@ importers:
       eslint: ^6.8.0
       jest: ^25.5.4
       metro-react-native-babel-preset: ^0.59.0
+      ora: 5.1.0
       react: 16.13.1
       react-native: 0.63.3
       react-native-gesture-handler: ^1.9.0
@@ -6187,6 +6189,16 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/is-glob/-/is-glob-4.0.1.tgz'
     version: 4.0.1
+  registry.npmjs.org/is-interactive/1.0.0:
+    dev: false
+    engines:
+      node: '>=8'
+    name: is-interactive
+    resolution:
+      integrity: sha512-2HvIEKRoqS62guEC+qBjpvRubdX910WCMuJTZ+I9yvqKU2/12eSL549HMwtabb4oupdj2sMP50k+XJfB/8JE6w==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/is-interactive/-/is-interactive-1.0.0.tgz'
+    version: 1.0.0
   registry.npmjs.org/is-negative-zero/2.0.0:
     dev: false
     engines:
@@ -7530,6 +7542,18 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/log-symbols/-/log-symbols-2.2.0.tgz'
     version: 2.2.0
+  registry.npmjs.org/log-symbols/4.0.0:
+    dependencies:
+      chalk: registry.npmjs.org/chalk/4.1.0
+    dev: false
+    engines:
+      node: '>=10'
+    name: log-symbols
+    resolution:
+      integrity: sha512-FN8JBzLx6CzeMrB0tg6pqlGU1wCrXW+ZXGH481kfsBqer0hToTIiHdjH4Mq8xJUbvATujKCvaREGWpGUionraA==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/log-symbols/-/log-symbols-4.0.0.tgz'
+    version: 4.0.0
   registry.npmjs.org/logkitty/0.7.1:
     dependencies:
       ansi-fragments: registry.npmjs.org/ansi-fragments/0.2.1
@@ -8747,6 +8771,25 @@ packages:
       registry: 'https://node.bit.dev/'
       tarball: 'https://registry.npmjs.org/ora/-/ora-3.4.0.tgz'
     version: 3.4.0
+  registry.npmjs.org/ora/5.1.0:
+    dependencies:
+      chalk: registry.npmjs.org/chalk/4.1.0
+      cli-cursor: registry.npmjs.org/cli-cursor/3.1.0
+      cli-spinners: registry.npmjs.org/cli-spinners/2.5.0
+      is-interactive: registry.npmjs.org/is-interactive/1.0.0
+      log-symbols: registry.npmjs.org/log-symbols/4.0.0
+      mute-stream: registry.npmjs.org/mute-stream/0.0.8
+      strip-ansi: registry.npmjs.org/strip-ansi/6.0.0
+      wcwidth: registry.npmjs.org/wcwidth/1.0.1
+    dev: false
+    engines:
+      node: '>=10'
+    name: ora
+    resolution:
+      integrity: sha512-9tXIMPvjZ7hPTbk8DFq1f7Kow/HU/pQYB60JbNq+QnGwcyhWVZaQ4hM9zQDEsPxw/muLpgiHSaumUZxCAmod/w==
+      registry: 'https://node.bit.dev/'
+      tarball: 'https://registry.npmjs.org/ora/-/ora-5.1.0.tgz'
+    version: 5.1.0
   registry.npmjs.org/os-tmpdir/1.0.2:
     dev: false
     engines:

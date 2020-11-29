@@ -61,8 +61,18 @@
     "components/button": {
         "files": [
             {
+                "name": "button.spec.tsx.snap",
+                "relativePath": "__snapshots__/button.spec.tsx.snap",
+                "test": false
+            },
+            {
                 "name": "button.composition.tsx",
                 "relativePath": "button.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "button.docs.tsx",
+                "relativePath": "button.docs.tsx",
                 "test": false
             },
             {

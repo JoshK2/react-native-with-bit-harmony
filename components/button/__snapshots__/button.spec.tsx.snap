@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component snapshot test 1`] = `
+<div
+  className="css-view-1dbjc4n r-cursor-1loqt21 r-touchAction-1otgn73 r-userSelect-lrvibr"
+  data-focusable={true}
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(0,165,226,1.00)",
+      "borderBottomLeftRadius": "4px",
+      "borderBottomRightRadius": "4px",
+      "borderTopLeftRadius": "4px",
+      "borderTopRightRadius": "4px",
+      "height": "40px",
+      "paddingBottom": "9px",
+      "paddingLeft": "9px",
+      "paddingRight": "9px",
+      "paddingTop": "9px",
+      "width": "100%",
+    }
+  }
+  tabIndex="0"
+>
+  <div
+    className="css-text-901oao"
+    dir="auto"
+    style={
+      Object {
+        "color": "rgba(255,255,255,1.00)",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "textAlign": "center",
+      }
+    }
+  >
+    Click
+  </div>
+</div>
+`;
