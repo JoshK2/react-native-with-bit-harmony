@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, View, ScrollView, Text, Image} from 'react-native';
 import {useRoute} from '@react-navigation/native';
-import {Loader} from '../../components/loader';
+import {Loader} from '@teambit/react-native.components.loader';
 import {
   useMovieDetails,
   MovieDetailsProps,
-} from '../../api/hooks/use-movie-details';
+} from '@teambit/react-native.api.hooks.use-movie-details';
 
 export const MovieDetails = () => {
   const route = useRoute();

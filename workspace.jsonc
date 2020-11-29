@@ -1,0 +1,88 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://docs.bit.dev/configuration
+ **/ {
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "React Native Web Demo",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "teambit.react-native"
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/pnpm",
+    "policy": {
+      "dependencies": {
+        "react": "16.13.1",
+        "react-native": "0.63.3",
+        "react-native-gesture-handler": "^1.9.0",
+        "react-native-reanimated": "^1.13.2",
+        "react-native-safe-area-context": "^3.1.9",
+        "react-native-screens": "^2.15.0",
+        "react-native-web": "0.14.8"
+      },
+      "peerDependencies": {
+        "@react-native-community/masked-view": "^0.1.10",
+        "@react-navigation/native": "^5.8.10",
+        "@react-navigation/stack": "^5.12.8"
+      }
+    }
+  },
+  /**
+   * workspace variants allow to set different subsets of configuration for components in your workspace.
+   * this is extremely useful for upgrading, aligning and building components with a
+   * new set of dependencies.
+   **/
+  "teambit.workspace/variants": {
+    /**
+     * "*" is a special rule which applied on all components in the workspace.
+     **/
+    "*": {
+      /**
+       * uncomment to apply the react environment on all components.
+       **/
+      "teambit.react-native/extensions/react-native": {}
+    },
+    "extensions": {
+      "teambit.harmony/aspect": {},
+      "teambit.dependencies/dependency-resolver": {
+        "policy": {
+          "dependencies": {
+            "@babel/core": "^7.8.4",
+            "@babel/runtime": "^7.8.4",
+            "@react-native-community/eslint-config": "^1.1.0",
+            "@types/jest": "^25.2.3",
+            "@types/react-native": "^0.63.2",
+            "@types/react-test-renderer": "^16.9.2",
+            "@typescript-eslint/eslint-plugin": "^2.27.0",
+            "@typescript-eslint/parser": "^2.27.0",
+            "babel-jest": "^25.1.0",
+            "eslint": "^6.5.1",
+            "jest": "^25.1.0",
+            "metro-react-native-babel-preset": "^0.59.0",
+            "react-test-renderer": "16.13.1",
+            "typescript": "^3.8.3",
+            "@testing-library/react-native": "7.1.0"
+          }
+        }
+      }
+    }
+  }
+}

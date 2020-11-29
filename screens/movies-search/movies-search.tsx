@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {StyleSheet, ScrollView, View, Text} from 'react-native';
-import {Divider} from '../../components/divider';
-import {Input} from '../../components/input';
-import {Button} from '../../components/button';
-import {Loader} from '../../components/loader';
-import {MovieCardList} from '../../components/movie-card-list';
-import {useSearchMovies} from '../../api/hooks/use-search-movies';
+import {Divider} from '@teambit/react-native.components.divider';
+import {Input} from '@teambit/react-native.components.input';
+import {Button} from '@teambit/react-native.components.button';
+import {Loader} from '@teambit/react-native.components.loader';
+import {MovieCardList} from '@teambit/react-native.components.movie-card-list';
+import {useSearchMovies} from '@teambit/react-native.api.hooks.use-search-movies';
 
 export const MoviesSearchScreen = () => {
   const [searchValue, setSearchValue] = useState('');

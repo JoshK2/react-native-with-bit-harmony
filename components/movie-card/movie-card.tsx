@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {Button} from '../button';
+import {Button} from '@teambit/react-native.components.button';
 
 export type Props = {
   title: string;
