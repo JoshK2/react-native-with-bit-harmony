@@ -1,9 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {
-  MovieCard,
-  Props as MovieCardProps,
-} from '@teambit/react-native.components.movie-card';
+import {MovieCard, Props as MovieCardProps} from '@netflux/movies.grid.movie-card';
 
 type Props = {
   list: MovieCardProps[];

@@ -18,7 +18,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "teambit.react-native"
+    "defaultScope": "netflux.movies"
   },
   /**
    * main configuration for component dependency resolution.
@@ -27,7 +27,7 @@
     /**
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
-    "packageManager": "teambit.dependencies/yarn",
+    "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
         "@babel/core": "^7.8.4",
@@ -56,7 +56,9 @@
         "typescript": "^3.8.3",
         "@teambit/documenter.theme.theme-context": "^0.2.3",
         "@teambit/documenter.ui.section": "^0.2.3",
-        "@teambit/documenter.ui.separator": "^0.2.3"
+        "@teambit/documenter.ui.separator": "^0.2.3",
+        "@teambit/documenter.ui.heading": "^0.2.3",
+        "@teambit/documenter.ui.paragraph": "^0.2.3"
       },
       "peerDependencies": {
         "@react-native-community/masked-view": "^0.1.10",
@@ -86,9 +88,14 @@
       "teambit.harmony/aspect": {},
       "teambit.dependencies/dependency-resolver": {
         "policy": {
-          "dependencies": {}
+          "dependencies": {
+            "react-native": "^0.63.3"
+          }
         }
       }
+    },
+    "components/base-ui": {
+      "defaultScope": "netflux.base-ui"
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, Platform} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {Button} from '@teambit/react-native.components.button';
+import {Button} from '@netflux/base-ui.button';
 
 export type Props = {
   title: string;

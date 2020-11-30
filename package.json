@@ -50,6 +50,8 @@
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^1.1.0",
     "@teambit/documenter.theme.theme-context": "^0.2.3",
+    "@teambit/documenter.ui.heading": "^0.2.3",
+    "@teambit/documenter.ui.paragraph": "^0.2.3",
     "@teambit/documenter.ui.section": "^0.2.3",
     "@teambit/documenter.ui.separator": "^0.2.3",
     "@testing-library/react-native": "7.1.0",

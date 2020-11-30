@@ -8,11 +8,11 @@ import {
   Platform,
 } from 'react-native';
 import {useRoute} from '@react-navigation/native';
-import {Loader} from '@teambit/react-native.components.loader';
+import {Loader} from '@netflux/base-ui.loader';
 import {
   useMovieDetails,
   MovieDetailsProps,
-} from '@teambit/react-native.api.hooks.use-movie-details';
+} from '@netflux/movies.hooks.use-movie-details';
 
 type Props = {
   imdbID?: string;
@@ -46,7 +46,9 @@ export const MovieDetails = ({imdbID}: Props) => {
   return (
     <View style={styles.container}>
       <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <Image style={styles.image} source={{uri: poster}} />
+        <View style={styles.viewImage}>
+          <Image style={styles.image} source={{uri: poster}} />
+        </View>
         <Text style={styles.title}>{title}</Text>
         <Text style={styles.info}>Year: {year}</Text>
         <Text style={styles.info}>Type: {type}</Text>
@@ -73,6 +75,10 @@ const styles = StyleSheet.create({
     shadowRadius: 10,
     elevation: 5,
     marginBottom: 30,
+  },
+  viewImage: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   image: {width: 300, height: 500, marginBottom: 10},
   title: {fontSize: 18, fontWeight: 'bold', marginBottom: 10},

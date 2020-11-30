@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {APIconfig} from '@teambit/react-native.api.config';
+import {APIconfig} from '@netflux/movies.config';
 
 export const useSearchMovies = (): [
   (searchFor: string) => Promise<void>,

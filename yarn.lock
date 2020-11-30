@@ -1189,6 +1189,22 @@
   dependencies:
     type-detect "4.0.8"
 
+"@teambit/base-ui.text.heading@0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@teambit/base-ui.text.heading/-/base-ui.text.heading-0.5.3.tgz#475206b98534211f2a7898974c7e42688ff3e0fa"
+  integrity sha512-IwbPx8Ho4kTpJ4r4YJQcfFRFpxIkCBJdD/KrmAGjvxwgjAIlBtx8J3AXEVQMboqslI2zi46UrlGkweUYfRCTYA==
+  dependencies:
+    "@babel/runtime" "^7.8.4"
+
+"@teambit/base-ui.text.paragraph@0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@teambit/base-ui.text.paragraph/-/base-ui.text.paragraph-0.5.3.tgz#67e4e94a9832e6a6611873ba2d5f559de0b3cba4"
+  integrity sha512-vmZsTALHam3HruenaFviaPUWnCQyZtdqjYqAJh54jaObsmsS9Udnsm5BMyJ5bgRDbMoemA4Tc/6UD8AwG4ViAQ==
+  dependencies:
+    "@babel/runtime" "^7.8.4"
+    "@teambit/base-ui.theme.sizes" "0.5.3"
+    classnames "^2.2.6"
+
 "@teambit/base-ui.theme.brand-definition@0.5.3":
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/@teambit/base-ui.theme.brand-definition/-/base-ui.theme.brand-definition-0.5.3.tgz#1d4384c8e9ef78cbe24a7d7271f533c2d216f169"
@@ -1240,6 +1256,13 @@
   dependencies:
     "@babel/runtime" "^7.8.4"
 
+"@teambit/base-ui.theme.sizes@0.5.3":
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/@teambit/base-ui.theme.sizes/-/base-ui.theme.sizes-0.5.3.tgz#971d3329f110873cb37b9375e7544950cc80ea66"
+  integrity sha512-VH7y8f9xCQNkheBUe0UUsoYeY+bCmoLy7nM5ZJ4RtIFprzK1FiBCOe23TdNvb8vudVoCxfkcZRZT3R4hWzkiBA==
+  dependencies:
+    "@babel/runtime" "^7.8.4"
+
 "@teambit/base-ui.theme.theme-provider@0.5.3":
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/@teambit/base-ui.theme.theme-provider/-/base-ui.theme.theme-provider-0.5.3.tgz#f1845df0bcf2fd9b33fc1c3db9337956edfff3ba"
@@ -1262,6 +1285,23 @@
     "@teambit/base-ui.theme.theme-provider" "0.5.3"
     classnames "^2.2.6"
     reset-css "^5.0.1"
+
+"@teambit/documenter.ui.heading@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@teambit/documenter.ui.heading/-/documenter.ui.heading-0.2.3.tgz#13446474052c5dedccc764326a276849f50ab9ca"
+  integrity sha512-CFmr6+8qn/LXBgZkSsQJUwgsA8Rv+uBWNsnDf7R1DDvfv3KeYP1a+Bx/Ca4bT5gADCSBU58JiG2A/1mjguo9EA==
+  dependencies:
+    "@teambit/base-ui.text.heading" "0.5.3"
+    classnames "^2.2.6"
+
+"@teambit/documenter.ui.paragraph@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@teambit/documenter.ui.paragraph/-/documenter.ui.paragraph-0.2.3.tgz#3b896b3b73e4dd7b208139ac13bddb7f2f36c6f2"
+  integrity sha512-taGa/wAUhoVVtYZMCOkXkL8whG0cBTCHda9jAKhHzIKp2dqesqFkPMP84BIgxP8hlwSRu0bvCSzEWXh0AP6DSg==
+  dependencies:
+    "@teambit/base-ui.text.paragraph" "0.5.3"
+    "@teambit/base-ui.theme.sizes" "0.5.3"
+    classnames "^2.2.6"
 
 "@teambit/documenter.ui.section@^0.2.3":
   version "0.2.3"

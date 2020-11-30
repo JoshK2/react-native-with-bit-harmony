@@ -1,24 +1,31 @@
 import React from 'react';
 import {Section} from '@teambit/documenter.ui.section';
 import {ThemeContext} from '@teambit/documenter.theme.theme-context';
-import {Separator} from '@teambit/documenter.ui.separator';
-
+import {H3} from '@teambit/documenter.ui.heading';
+import {Paragraph} from '@teambit/documenter.ui.paragraph';
 export default function Overview() {
   return (
     <ThemeContext>
       <>
         <Section>
-          The React Native extesnion is based on the React envs and compile
-          React Native component. <br />
-          The extension use react-native-web to render the components in
-          compositions tab and examples.
+          <H3>Overview</H3>
+          <Paragraph>
+            Basic React-Native extension for Bit.
+            <br />
+            This extension implements best practices from react-native-web.
+          </Paragraph>
         </Section>
-        <Separator />
+        <Section>
+          <H3>Usage instructions</H3>
+          <Paragraph>
+            Create a <b>variant</b> in project's workspace.json file.
+            <br />
+            Set this extension as the variant's extension.
+          </Paragraph>
+        </Section>
       </>
     </ThemeContext>
   );
 }
-
 Overview.abstract = 'A React Native extension.';
-
 Overview.labels = ['react native', 'typescript', 'extension', 'compiler'];
