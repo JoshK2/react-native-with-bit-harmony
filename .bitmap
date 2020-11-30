@@ -295,6 +295,11 @@
                 "test": false
             },
             {
+                "name": "react-native.docs.tsx",
+                "relativePath": "react-native.docs.tsx",
+                "test": false
+            },
+            {
                 "name": "react-native.extension.ts",
                 "relativePath": "react-native.extension.ts",
                 "test": false
