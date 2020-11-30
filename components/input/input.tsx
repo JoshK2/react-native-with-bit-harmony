@@ -31,5 +31,6 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 4,
+    paddingLeft: 5,
   },
 });

@@ -1,5 +1,12 @@
 import React, {useEffect} from 'react';
-import {StyleSheet, View, ScrollView, Text, Image} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  ScrollView,
+  Text,
+  Image,
+  Platform,
+} from 'react-native';
 import {useRoute} from '@react-navigation/native';
 import {Loader} from '@teambit/react-native.components.loader';
 import {
@@ -7,14 +14,19 @@ import {
   MovieDetailsProps,
 } from '@teambit/react-native.api.hooks.use-movie-details';
 
-export const MovieDetails = () => {
-  const route = useRoute();
+type Props = {
+  imdbID?: string;
+};
+
+export const MovieDetails = ({imdbID}: Props) => {
+  const isWeb = Platform.OS === 'web';
+  const route = !isWeb && useRoute();
   // @ts-ignore
-  const imdbID = route?.params?.imdbID;
+  const movieID = imdbID || route?.params?.imdbID;
   const [getMovie, movie, isLoading, error] = useMovieDetails();
 
   useEffect(() => {
-    getMovie(imdbID);
+    getMovie(movieID);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

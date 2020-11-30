@@ -319,6 +319,21 @@
                 "test": false
             },
             {
+                "name": "movie-details.composition.tsx",
+                "relativePath": "movie-details.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "movie-details.docs.tsx",
+                "relativePath": "movie-details.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "movie-details.spec.tsx",
+                "relativePath": "movie-details.spec.tsx",
+                "test": false
+            },
+            {
                 "name": "movie-details.tsx",
                 "relativePath": "movie-details.tsx",
                 "test": false
@@ -335,6 +350,21 @@
             {
                 "name": "index.ts",
                 "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "movies-search.composition.tsx",
+                "relativePath": "movies-search.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "movies-search.docs.tsx",
+                "relativePath": "movies-search.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "movies-search.spec.tsx",
+                "relativePath": "movies-search.spec.tsx",
                 "test": false
             },
             {
