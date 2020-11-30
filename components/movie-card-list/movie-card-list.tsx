@@ -1,6 +1,9 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {MovieCard, Props as MovieCardProps} from '@teambit/react-native.components.movie-card';
+import {
+  MovieCard,
+  Props as MovieCardProps,
+} from '@teambit/react-native.components.movie-card';
 
 type Props = {
   list: MovieCardProps[];
@@ -14,9 +17,7 @@ export const MovieCardList = ({list}: Props) => {
           <MovieCard
             key={index}
             title={movie.title}
-            year={movie.year}
             imdbID={movie.imdbID}
-            type={movie.type}
             poster={movie.poster}
           />
         ))}

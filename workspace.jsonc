@@ -53,7 +53,10 @@
         "react-native-screens": "^2.15.0",
         "react-native-web": "0.14.8",
         "react-test-renderer": "16.13.1",
-        "typescript": "^3.8.3"
+        "typescript": "^3.8.3",
+        "@teambit/documenter.theme.theme-context": "^0.2.3",
+        "@teambit/documenter.ui.section": "^0.2.3",
+        "@teambit/documenter.ui.separator": "^0.2.3"
       },
       "peerDependencies": {
         "@react-native-community/masked-view": "^0.1.10",

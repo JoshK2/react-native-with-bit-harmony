@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, Image} from 'react-native';
+import {StyleSheet, View, Text, Image, Platform} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {Button} from '@teambit/react-native.components.button';
 
@@ -10,7 +10,8 @@ export type Props = {
 };
 
 export const MovieCard = ({title, imdbID, poster}: Props) => {
-  const navigation = useNavigation();
+  const isWeb = Platform.OS === 'web';
+  const navigation = !isWeb && useNavigation();
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={{uri: poster}} />
@@ -18,8 +19,7 @@ export const MovieCard = ({title, imdbID, poster}: Props) => {
       <Button
         value="More Info"
         onPress={() => {
-          console.log('clicked', imdbID);
-          navigation.navigate('Movie Details', {imdbID});
+          !isWeb && navigation.navigate('Movie Details', {imdbID});
         }}
         buttonStyle={styles.button}
       />

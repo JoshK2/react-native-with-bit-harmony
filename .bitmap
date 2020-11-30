@@ -217,8 +217,28 @@
     "components/movie-card": {
         "files": [
             {
+                "name": "movie-card.spec.tsx.snap",
+                "relativePath": "__snapshots__/movie-card.spec.tsx.snap",
+                "test": false
+            },
+            {
                 "name": "index.ts",
                 "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "movie-card.composition.tsx",
+                "relativePath": "movie-card.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "movie-card.docs.tsx",
+                "relativePath": "movie-card.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "movie-card.spec.tsx",
+                "relativePath": "movie-card.spec.tsx",
                 "test": false
             },
             {
@@ -238,6 +258,21 @@
             {
                 "name": "index.ts",
                 "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "movie-card-list.composition.tsx",
+                "relativePath": "movie-card-list.composition.tsx",
+                "test": false
+            },
+            {
+                "name": "movie-card-list.docs.tsx",
+                "relativePath": "movie-card-list.docs.tsx",
+                "test": false
+            },
+            {
+                "name": "movie-card-list.spec.tsx",
+                "relativePath": "movie-card-list.spec.tsx",
                 "test": false
             },
             {
