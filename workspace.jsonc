@@ -82,7 +82,7 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "teambit.react-native/extensions/react-native": {}
+      "netflux.movies/extensions/react-native": {}
     },
     "extensions": {
       "teambit.harmony/aspect": {},

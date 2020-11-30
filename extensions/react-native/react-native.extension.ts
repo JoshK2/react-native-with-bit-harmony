@@ -10,6 +10,7 @@ export class ReactNativeExtension {
   static async provider([react, envs]: [ReactMain, EnvsMain]) {
     const reactNativeEnv = react.compose([
       react.overrideDevServerConfig(webpackConfig),
+      react.overridePreviewConfig(webpackConfig),
       react.overrideDependencies({
         dependencies: {
           react: '-',
