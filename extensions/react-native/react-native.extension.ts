@@ -20,6 +20,7 @@ export class ReactNativeExtension {
           '@types/jest': '~26.0.9',
           react: '-',
           'react-native': '-',
+          'react-native-web': '0.14.8',
         },
         peerDependencies: {
           react: '^16.13.1',
