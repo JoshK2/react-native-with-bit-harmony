@@ -9,7 +9,6 @@ export class ReactNativeExtension {
 
   static async provider([reactNative, envs]: [ReactNativeMain, EnvsMain]) {
     const reactNativeEnv = reactNative.compose([
-      // @ts-ignore
       reactNative.overrideDevServerConfig(webpackConfig),
       // react.overridePreviewConfig(webpackConfig),
     ]);
