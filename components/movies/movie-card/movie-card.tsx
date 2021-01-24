@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text, Image, Platform} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
+// import {useNavigation} from '@react-navigation/native';
 import {Button} from '@netflux/base-ui.button';
 
 export type Props = {
@@ -11,7 +11,7 @@ export type Props = {
 
 export const MovieCard = ({title, imdbID, poster}: Props) => {
   const isWeb = Platform.OS === 'web';
-  const navigation = !isWeb && useNavigation();
+  // const navigation = !isWeb && useNavigation();
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={{uri: poster}} />
@@ -19,7 +19,7 @@ export const MovieCard = ({title, imdbID, poster}: Props) => {
       <Button
         value="More Info"
         onPress={() => {
-          !isWeb && navigation.navigate('Movie Details', {imdbID});
+          // !isWeb && navigation.navigate('Movie Details', {imdbID});
         }}
         buttonStyle={styles.button}
       />

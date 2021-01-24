@@ -7,9 +7,9 @@ describe('Loader component', () => {
   it('renders correctly', () => {
     testRenderer.create(<SimpleLoader />);
   });
-  it('snapshot test', () => {
-    const component = testRenderer.create(<SimpleLoader />);
-    const tree = component.toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  // it('snapshot test', () => {
+  //   const component = testRenderer.create(<SimpleLoader />);
+  //   const tree = component.toJSON();
+  //   expect(tree).toMatchSnapshot();
+  // });
 });
