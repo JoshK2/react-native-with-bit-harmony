@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {StyleSheet, ScrollView, View, Text} from 'react-native';
 import {Divider} from '@netflux/base-ui.divider';
-import {Input} from '@netflux/base-ui.input';
+import {SearchInput} from '@netflux/base-ui.search-input';
 import {Button} from '@netflux/base-ui.button';
 import {Loader} from '@netflux/base-ui.loader';
 import {MovieCardList} from '@netflux/movies.grid.movie-card-list';
@@ -15,7 +15,7 @@ export const MoviesSearchScreen = () => {
     <View style={styles.container}>
       <Divider />
       <View style={styles.searchContainer}>
-        <Input
+        <SearchInput
           placeHolder="Search"
           onChange={setSearchValue}
           value={searchValue}

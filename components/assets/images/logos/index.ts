@@ -1,1 +1,0 @@
-export {bitLogo} from './logos';

@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -27,7 +27,7 @@
     /**
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
-    "packageManager": "teambit.dependencies/pnpm",
+    "packageManager": "teambit.dependencies/yarn",
     "policy": {
       "dependencies": {},
       "peerDependencies": {
@@ -36,11 +36,16 @@
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": ["**/*.spec.ts"],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
     "strictPeerDependencies": true
   },
   "teambit.defender/tester": {
-    "patterns": ["**/*.spec.+(js|ts|jsx|tsx)", "**/*.test.*"]
+    "patterns": [
+      "**/*.spec.+(js|ts|jsx|tsx)",
+      "**/*.test.*"
+    ]
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -73,6 +78,9 @@
     // },
     "components/base-ui": {
       "defaultScope": "netflux.base-ui"
+    },
+    "components/assets": {
+      "defaultScope": "netflux.assets"
     }
   }
 }
