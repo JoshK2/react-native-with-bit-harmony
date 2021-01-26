@@ -55,7 +55,9 @@
     "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
+    "jest-file-loader": "^1.0.1",
     "metro-react-native-babel-preset": "^0.59.0",
+    "path": "^0.12.7",
     "react-test-renderer": "16.13.1",
     "typescript": "^3.8.3"
   },
@@ -68,6 +70,9 @@
       "jsx",
       "json",
       "node"
-    ]
+    ],
+    "moduleNameMapper": { 
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileTransformer.js"
+    }
   }
 }
