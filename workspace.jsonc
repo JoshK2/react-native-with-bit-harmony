@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -36,11 +36,16 @@
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": ["**/*.spec.ts"],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
     "strictPeerDependencies": true
   },
   "teambit.defender/tester": {
-    "patterns": ["**/*.spec.+(js|ts|jsx|tsx)", "**/*.test.*"]
+    "patterns": [
+      "**/*.spec.+(js|ts|jsx|tsx)",
+      "**/*.test.*"
+    ]
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
@@ -53,9 +58,9 @@
      **/
     "extensions": {
       "teambit.harmony/aspect": {},
-      "teambit.envs/envs": {
-        "env": "teambit.harmony/aspect"
-      },
+      // "teambit.envs/envs": {
+      //   "env": "teambit.harmony/aspect"
+      // },
       "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {
@@ -69,10 +74,10 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "netflux.extensions/netflux-react-native": {},
-      "teambit.envs/envs": {
-        "env": "netflux.extensions/netflux-react-native"
-      }
+      "netflux.extensions/netflux-react-native": {}
+      // "teambit.envs/envs": {
+      //   "env": "netflux.extensions/netflux-react-native"
+      // }
     },
     // "*": {
     //   "teambit.react/react-native": {}
