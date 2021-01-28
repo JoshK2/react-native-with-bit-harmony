@@ -57,5 +57,5 @@
         "mainFile": "index.ts",
         "rootDir": "screens/movies-search"
     },
-    "version": "14.8.9-dev.276"
+    "version": "14.8.9-dev.279"
 }
