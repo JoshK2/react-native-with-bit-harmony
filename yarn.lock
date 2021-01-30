@@ -2707,8 +2707,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "button-d72599@workspace:components/base-ui/button"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -3151,9 +3151,6 @@ __metadata:
 "config-9fcffe@workspace:config":
   version: 0.0.0-use.local
   resolution: "config-9fcffe@workspace:config"
-  peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
   languageName: unknown
   linkType: soft
 
@@ -3540,8 +3537,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "divider-7e9007@workspace:components/base-ui/divider"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -5028,8 +5025,8 @@ fsevents@^2.1.2:
   version: 0.0.0-use.local
   resolution: "input-d92b67@workspace:components/base-ui/input"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -6376,8 +6373,8 @@ fsevents@^2.1.2:
   version: 0.0.0-use.local
   resolution: "loader-c03abf@workspace:components/base-ui/loader"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -7110,8 +7107,8 @@ fsevents@^2.1.2:
   version: 0.0.0-use.local
   resolution: "movie-card-109f51@workspace:components/movies/movie-card"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -7119,8 +7116,8 @@ fsevents@^2.1.2:
   version: 0.0.0-use.local
   resolution: "movie-card-list-28acd0@workspace:components/movies/movie-card-list"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -7128,8 +7125,8 @@ fsevents@^2.1.2:
   version: 0.0.0-use.local
   resolution: "movie-details-506991@workspace:screens/movie-details"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -7137,8 +7134,8 @@ fsevents@^2.1.2:
   version: 0.0.0-use.local
   resolution: "movies-search-8d20e3@workspace:screens/movies-search"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -8822,8 +8819,8 @@ resolve@1.1.7:
   version: 0.0.0-use.local
   resolution: "search-68db23@workspace:components/assets/images/search"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -8831,8 +8828,8 @@ resolve@1.1.7:
   version: 0.0.0-use.local
   resolution: "search-input-cff9fa@workspace:components/base-ui/search-input"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
+    react-native: 0.63.3
   languageName: unknown
   linkType: soft
 
@@ -9959,8 +9956,7 @@ typescript@^3.8.3:
   version: 0.0.0-use.local
   resolution: "use-movie-details-66d497@workspace:hooks/use-movie-details"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
   languageName: unknown
   linkType: soft
 
@@ -9968,8 +9964,7 @@ typescript@^3.8.3:
   version: 0.0.0-use.local
   resolution: "use-search-movies-d0bc97@workspace:hooks/use-search-movies"
   peerDependencies:
-    react: ^16.13.1
-    react-native: ^0.63.3
+    react: 16.13.1
   languageName: unknown
   linkType: soft
 
