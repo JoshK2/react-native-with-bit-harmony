@@ -3,7 +3,7 @@ import {EnvsAspect, EnvsMain} from '@teambit/envs';
 import {Aspect} from '@teambit/harmony';
 import webpackConfig from './webpack/webpack.config';
 
-//const webpackConfig = require('./webpack/webpack.config');
+const jestConfig = require.resolve('./jest/jest.config');
 
 export class ReactNativeExtension {
   static dependencies: Aspect[] = [ReactNativeAspect, EnvsAspect];
@@ -11,7 +11,7 @@ export class ReactNativeExtension {
   static async provider([reactNative, envs]: [ReactNativeMain, EnvsMain]) {
     const reactNativeEnv = reactNative.compose([
       reactNative.overrideDevServerConfig(webpackConfig),
-      // react.overridePreviewConfig(webpackConfig),
+      reactNative.overrideJestConfig(jestConfig),
     ]);
 
     envs.registerEnv(reactNativeEnv);

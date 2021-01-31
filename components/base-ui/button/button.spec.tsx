@@ -8,11 +8,11 @@ describe('Button component', () => {
   it('renders correctly', () => {
     testRenderer.create(<SimpleButton />);
   });
-  // it('snapshot test', () => {
-  //   const component = testRenderer.create(<SimpleButton />);
-  //   const tree = component.toJSON();
-  //   expect(tree).toMatchSnapshot();
-  // });
+  it('snapshot test', () => {
+    const component = testRenderer.create(<SimpleButton />);
+    const tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('renders correctly with value', () => {
     const {getByText} = render(<ButtonWithValue />);
     expect(getByText(/More Info/)).toBeTruthy();

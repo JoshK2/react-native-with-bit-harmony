@@ -59,7 +59,8 @@
       "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {
-            "file-loader": "6.2.0"
+            "file-loader": "6.2.0",
+            "lodash.merge": "4.6.2"
           }
         }
       },

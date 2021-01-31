@@ -5,7 +5,7 @@
         "mainFile": "index.ts",
         "rootDir": "components/assets/images/search"
     },
-    "netflux.base-ui/button@0.0.5": {
+    "netflux.base-ui/button@0.0.6": {
         "mainFile": "index.ts",
         "rootDir": "components/base-ui/button"
     },
@@ -33,11 +33,11 @@
         "mainFile": "index.ts",
         "rootDir": "config"
     },
-    "netflux.movies/grid/movie-card-list@0.0.5": {
+    "netflux.movies/grid/movie-card-list@0.0.6": {
         "mainFile": "index.ts",
         "rootDir": "components/movies/movie-card-list"
     },
-    "netflux.movies/grid/movie-card@0.0.5": {
+    "netflux.movies/grid/movie-card@0.0.6": {
         "mainFile": "index.ts",
         "rootDir": "components/movies/movie-card"
     },
@@ -53,7 +53,7 @@
         "mainFile": "index.ts",
         "rootDir": "screens/movie-details"
     },
-    "netflux.movies/screens/movies-search@0.0.5": {
+    "netflux.movies/screens/movies-search@0.0.6": {
         "mainFile": "index.ts",
         "rootDir": "screens/movies-search"
     },
