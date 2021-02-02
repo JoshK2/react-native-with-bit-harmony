@@ -39,9 +39,9 @@
     "devFilePatterns": ["**/*.spec.ts"],
     "strictPeerDependencies": true
   },
-  "teambit.defender/tester": {
-    "patterns": ["**/*.spec.+(js|ts|jsx|tsx)", "**/*.test.*"]
-  },
+  // "teambit.defender/tester": {
+  //   "patterns": ["**/*.spec.+(js|ts|jsx|tsx)", "**/*.test.*"]
+  // },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
@@ -53,9 +53,6 @@
      **/
     "extensions": {
       "teambit.harmony/aspect": {},
-      "teambit.envs/envs": {
-        "env": "teambit.harmony/aspect"
-      },
       "teambit.dependencies/dependency-resolver": {
         "policy": {
           "dependencies": {
@@ -70,10 +67,7 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "netflux.extensions/netflux-react-native": {},
-      "teambit.envs/envs": {
-        "env": "netflux.extensions/netflux-react-native"
-      }
+      "netflux.extensions/netflux-react-native": {}
     },
     // "*": {
     //   "teambit.react/react-native": {}
