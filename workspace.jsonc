@@ -57,7 +57,8 @@
         "policy": {
           "dependencies": {
             "file-loader": "6.2.0",
-            "lodash.merge": "4.6.2"
+            "lodash.merge": "4.6.2",
+            "react-native-web": "0.16.2"
           }
         }
       },

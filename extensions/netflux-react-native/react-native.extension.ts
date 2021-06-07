@@ -1,21 +1,31 @@
+import {EnvsMain, EnvsAspect} from '@teambit/envs';
 import {ReactNativeAspect, ReactNativeMain} from '@teambit/react-native';
-import {EnvsAspect, EnvsMain} from '@teambit/envs';
-import {Aspect} from '@teambit/harmony';
-import webpackConfig from './webpack/webpack.config';
+import {
+  previewConfigTransformer,
+  devServerConfigTransformer,
+} from './webpack/webpack-transformers';
 
 const jestConfig = require.resolve('./jest/jest.config');
 
 export class ReactNativeExtension {
-  static dependencies: Aspect[] = [ReactNativeAspect, EnvsAspect];
+  constructor(private reactNative: ReactNativeMain) {}
 
-  static async provider([reactNative, envs]: [ReactNativeMain, EnvsMain]) {
-    const reactNativeEnv = reactNative.compose([
-      reactNative.overrideDevServerConfig(webpackConfig),
+  static dependencies: any = [EnvsAspect, ReactNativeAspect];
+
+  static async provider([envs, reactNative]: [EnvsMain, ReactNativeMain]) {
+    const CustomReactNativeEnv = reactNative.compose([
+      /*
+        Use any of the "reactNative.override..." transformers to
+      */
+      reactNative.useWebpack({
+        previewConfig: [previewConfigTransformer],
+        devServerConfig: [devServerConfigTransformer],
+      }),
       reactNative.overrideJestConfig(jestConfig),
     ]);
 
-    envs.registerEnv(reactNativeEnv);
+    envs.registerEnv(CustomReactNativeEnv);
 
-    return new ReactNativeExtension();
+    return new ReactNativeExtension(reactNative);
   }
 }
