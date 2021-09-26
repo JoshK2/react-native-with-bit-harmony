@@ -1,10 +1,16 @@
-const merge = require('lodash.merge');
-const {jestConfig} = require('@teambit/react-native');
+// Override the Jest config to ignore transpiling from specific folders
+// See the base Jest config: https://bit.dev/teambit/react/react-native/~code/jest/jest.config.js
 
-const config = {
-  transformIgnorePatterns: ['node_modules/(?!(@netflux)/)'],
+const reactNativeJestConfig = require('@teambit/react-native').jestConfig;
+const {
+  generateNodeModulesPattern,
+} = require('@teambit/dependencies.modules.packages-excluder');
+const packagesToExclude = ['prop-types', '@teambit'];
+
+module.exports = {
+  ...reactNativeJestConfig,
+  transformIgnorePatterns: [
+    ...reactNativeJestConfig.transformIgnorePatterns,
+    '<rootDir>/' + generateNodeModulesPattern({packages: packagesToExclude}),
+  ],
 };
-
-const mergedConfig = merge(jestConfig, config);
-
-module.exports = mergedConfig;

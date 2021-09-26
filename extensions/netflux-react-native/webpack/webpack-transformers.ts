@@ -18,7 +18,6 @@ const fileLoaderRule = {
  * @param config
  * @param _context
  */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function commonTransformation(
   config: WebpackConfigMutator,
   _context: WebpackConfigTransformContext,

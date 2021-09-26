@@ -5,8 +5,6 @@ import {ReactNativeAspect, ReactNativeMain} from '@teambit/react-native';
 //   devServerConfigTransformer,
 // } from './webpack/webpack-transformers';
 
-//const jestConfig = require.resolve('./jest/jest.config');
-
 export class ReactNativeExtension {
   constructor(private reactNative: ReactNativeMain) {}
 
@@ -21,7 +19,7 @@ export class ReactNativeExtension {
       //   previewConfig: [previewConfigTransformer],
       //   devServerConfig: [devServerConfigTransformer],
       // }),
-      //reactNative.overrideJestConfig(jestConfig),
+      reactNative.overrideJestConfig(require.resolve('./jest/jest.config')),
     ]);
 
     envs.registerEnv(CustomReactNativeEnv);

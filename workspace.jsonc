@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -29,15 +29,21 @@
      */
     "packageManager": "teambit.dependencies/yarn",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@teambit/dependencies.modules.packages-excluder": "0.0.7"
+      },
       "peerDependencies": {
         "react": "16.13.1",
         "react-native": "0.63.3"
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": ["**/*.spec.ts"],
-    "strictPeerDependencies": true
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true,
+    "savePrefix": ""
   },
   // "teambit.defender/tester": {
   //   "patterns": ["**/*.spec.+(js|ts|jsx|tsx)", "**/*.test.*"]
