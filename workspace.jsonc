@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://docs.bit.dev/configuration
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -34,13 +34,13 @@
       },
       "peerDependencies": {
         "react": "16.13.1",
-        "react-native": "0.63.3"
+        "react-native": "0.63.3",
+        "babel-jest": "27.4.5",
+        "react-test-renderer": "17.0.2"
       }
     },
     "packageManagerArgs": [],
-    "devFilePatterns": [
-      "**/*.spec.ts"
-    ],
+    "devFilePatterns": ["**/*.spec.ts"],
     "strictPeerDependencies": true,
     "installFromBitDevRegistry": true,
     "savePrefix": ""
@@ -70,15 +70,15 @@
       },
       "defaultScope": "netflux.extensions"
     },
-    "*": {
-      /**
-       * uncomment to apply the react environment on all components.
-       **/
-      "netflux.extensions/netflux-react-native": {}
+    "envs/my-react-native": {
+      "teambit.harmony/aspect": {},
+      "teambit.dependencies/dependency-resolver": {},
+      "defaultScope": "netflux.extensions"
     },
-    // "*": {
-    //   "teambit.react/react-native": {}
-    // },
+    "*": {
+      "netflux.extensions/netflux-react-native": "-",
+      "netflux.extensions/envs/my-react-native": {}
+    },
     "components/base-ui": {
       "defaultScope": "netflux.base-ui"
     },
